@@ -70,25 +70,7 @@
 				"inputs": [
 					{
 						"referenceName": "Binary1",
-						"type": "DatasetReference",
-						"parameters": {
-							"accesskeyid": {
-								"value": "@substring(activity('get temp tokens AWS S3 REST').output.Response, add(indexof(activity('get temp tokens AWS S3 REST').output.Response, '<accesskeyid>'),length('<accesskeyid>')), \nsub(sub(indexof(activity('get temp tokens AWS S3 REST').output.Response, '</accesskeyid>'), indexof(activity('get temp tokens AWS S3 REST').output.Response,'<accesskeyid>')), length('<accesskeyid>'))\n)",
-								"type": "Expression"
-							},
-							"secretaccesskey": {
-								"value": "@substring(activity('get temp tokens AWS S3 REST').output.Response, add(indexof(activity('get temp tokens AWS S3 REST').output.Response, '<secretaccesskey>'),length('<secretaccesskey>')), \nsub(sub(indexof(activity('get temp tokens AWS S3 REST').output.Response, '</secretaccesskey>'), indexof(activity('get temp tokens AWS S3 REST').output.Response,'<secretaccesskey>')), length('<secretaccesskey>'))\n)",
-								"type": "Expression"
-							},
-							"sessiontoken": {
-								"value": "@substring(activity('get temp tokens AWS S3 REST').output.Response, add(indexof(activity('get temp tokens AWS S3 REST').output.Response, '<sessiontoken>'),length('<sessiontoken>')), \nsub(sub(indexof(activity('get temp tokens AWS S3 REST').output.Response, '</sessiontoken>'), indexof(activity('get temp tokens AWS S3 REST').output.Response,'<sessiontoken>')), length('<sessiontoken>'))\n)",
-								"type": "Expression"
-							},
-							"s3name": {
-								"value": "@pipeline().parameters.aws_s3_copy",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
