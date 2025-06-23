@@ -1,0 +1,30 @@
+{
+	"name": "SourceDataset_93q",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AmazonS31",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AmazonS3Location",
+				"bucketName": "scdbunker123"
+			},
+			"columnDelimiter": " ",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

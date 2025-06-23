@@ -5,8 +5,12 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"serviceEndpoint": "https://testawsadfrg8fd6.blob.core.windows.net/",
-			"accountKind": "Storage"
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=scdbunk123sa;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmYzk5YmM1Mi1lZWE2LTQ3YzUtYjY2OS03NTYzNDBhNjcwZTciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "shir1",
+			"type": "IntegrationRuntimeReference"
 		}
 	}
 }

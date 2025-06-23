@@ -1,0 +1,15 @@
+{
+	"name": "scdatabunkdf1",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "4afa2b34-3502-4281-9a1f-f48e88c109e6",
+		"tenantId": "333d80f4-dd33-4824-8d53-cefe747d7677",
+		"userAssignedIdentities": {
+			"/subscriptions/a28df86c-26bc-4340-895b-f7d83ae7a07b/resourcegroups/scdatabunkrg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/sclogicappumi": {
+				"clientId": "c2d06bf4-da9f-44f0-b6fb-a4dbcc13b372",
+				"principalId": "3e4579c2-4869-462a-8682-7169bdae0162"
+			}
+		}
+	}
+}
