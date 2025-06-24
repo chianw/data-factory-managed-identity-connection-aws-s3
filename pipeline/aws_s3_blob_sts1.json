@@ -15,9 +15,13 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"method": "POST",
+					"method": "GET",
 					"url": "https://login.microsoftonline.com/333d80f4-dd33-4824-8d53-cefe747d7677/oauth2/v2.0/token",
 					"authentication": {
+						"credential": {
+							"referenceName": "credential1",
+							"type": "CredentialReference"
+						},
 						"type": "UserAssignedManagedIdentity"
 					}
 				}
