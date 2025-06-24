@@ -1,0 +1,28 @@
+{
+	"name": "aws_s3_blob_sts1",
+	"properties": {
+		"activities": [
+			{
+				"name": "get_entra_tokens",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "POST",
+					"url": "https://login.microsoftonline.com/333d80f4-dd33-4824-8d53-cefe747d7677/oauth2/v2.0/token",
+					"authentication": {
+						"type": "UserAssignedManagedIdentity"
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}
