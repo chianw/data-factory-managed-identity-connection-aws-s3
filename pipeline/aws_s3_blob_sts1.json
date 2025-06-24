@@ -20,7 +20,7 @@
 						"Content-Type": "application/x-www-form-urlencoded"
 					},
 					"url": "https://login.microsoftonline.com/333d80f4-dd33-4824-8d53-cefe747d7677/oauth2/v2.0/token",
-					"body": "",
+					"body": "tenant=333d80f4-dd33-4824-8d53-cefe747d7677&client_id=b0d4c385-456e-4cab-81db-19f5866eb04f&grant_type=client_credentials&scope=https://graph.microsoft.com/.default",
 					"authentication": {
 						"resource": "https://graph.microsoft.com",
 						"credential": {
