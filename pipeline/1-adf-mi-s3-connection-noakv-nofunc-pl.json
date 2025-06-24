@@ -50,37 +50,32 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
+						"type": "BinarySource",
 						"storeSettings": {
 							"type": "AmazonS3ReadSettings",
 							"recursive": true
 						},
 						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
+							"type": "BinaryReadSettings"
 						}
 					},
 					"sink": {
-						"type": "DelimitedTextSink",
+						"type": "BinarySink",
 						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
-						},
-						"formatSettings": {
-							"type": "DelimitedTextWriteSettings",
-							"quoteAllText": true,
-							"fileExtension": ".txt"
+							"type": "AmazonS3WriteSettings"
 						}
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "SourceDataset_93q",
+						"referenceName": "Binary1",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DestinationDataset_93q",
+						"referenceName": "Binary2",
 						"type": "DatasetReference"
 					}
 				]
